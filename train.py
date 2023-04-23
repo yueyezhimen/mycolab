@@ -509,7 +509,7 @@ def main(opt, callbacks=Callbacks()):
         #打印参数
         print_args(vars(opt))
         #检验git仓库代码是否更新
-        check_git_status()
+        #check_git_status()
         #py依赖包是否加载成功
         check_requirements()
 

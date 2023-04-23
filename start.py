@@ -8,12 +8,14 @@ def _detect():
 def _train():
     opt = train.parse_opt();
     opt.data = "VOC.yaml";
+    opt.cfg = "yolov5l.yaml"
     opt.weights = ""
     train.main(opt)
 def _resume():
     opt = train.parse_opt();
     opt.resume = True;
     opt.project = "runs/train"
+
     train.main(opt)
 
 def main():
