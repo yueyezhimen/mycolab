@@ -9,6 +9,7 @@ def _train():
     opt = train.parse_opt();
     opt.data = "coco.yaml";
     opt.cfg = "yolov5l.yaml"
+    opt.workers = 2;
     opt.weights = ""
     opt.project = "../../runs/train"
     train.main(opt)
